@@ -18,8 +18,8 @@ import net.minecraftforge.client.gui.widget.ExtendedButton;
 public class NostalgiaCraftingScreen extends AbstractContainerScreen<NostalgiaCraftingContainer> {
 
 	private static final ResourceLocation TEXTURE = new ResourceLocation(nostalgia.MOD_ID, "textures/gui/example_chest.png");
-	public NostalgiaCraftingScreen(NostalgiaCraftingContainer container, Inventory playerInventory) {
-		super(container, playerInventory, (Component) Component.EMPTY);
+	public NostalgiaCraftingScreen(NostalgiaCraftingContainer container, Inventory playerInventory, Component title) {
+		super(container, playerInventory, title);
 		this.leftPos = 0;
 		this.topPos = 0;
 		this.imageWidth = 156;
