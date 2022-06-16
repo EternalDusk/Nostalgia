@@ -5,7 +5,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 
 
 import com.dusk.nostalgia.nostalgia;
-import com.dusk.nostalgia.common.container.NostalgiaCraftingContainer;
+import com.dusk.nostalgia.common.container.NostalgiaCraftingMenu;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
@@ -15,15 +15,15 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraftforge.client.gui.widget.ExtendedButton;
 
-public class NostalgiaCraftingScreen extends AbstractContainerScreen<NostalgiaCraftingContainer> {
+public class NostalgiaCraftingScreen extends AbstractContainerScreen<NostalgiaCraftingMenu> {
 
-	private static final ResourceLocation TEXTURE = new ResourceLocation(nostalgia.MOD_ID, "textures/gui/example_chest.png");
-	public NostalgiaCraftingScreen(NostalgiaCraftingContainer container, Inventory playerInventory, Component title) {
+	private static final ResourceLocation TEXTURE = new ResourceLocation(nostalgia.MOD_ID, "textures/gui/crafting.png");
+	public NostalgiaCraftingScreen(NostalgiaCraftingMenu container, Inventory playerInventory, Component title) {
 		super(container, playerInventory, title);
 		this.leftPos = 0;
 		this.topPos = 0;
-		this.imageWidth = 156;
-		this.imageHeight = 166;
+		this.imageWidth = 512;
+		this.imageHeight = 332;
 	}
 
 	@Override

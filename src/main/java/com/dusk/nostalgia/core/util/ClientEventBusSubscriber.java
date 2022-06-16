@@ -16,7 +16,7 @@ public class ClientEventBusSubscriber {
 	
 	@SubscribeEvent
 	public static void clientSetup(FMLClientSetupEvent event) {
-		MenuScreens.register(ContainerInit.NOSTALGIA_CRAFTING_TABLE.get(), NostalgiaCraftingScreen::new);
+		MenuScreens.register(ContainerInit.NOSTALGIA_CRAFTING_MENU.get(), NostalgiaCraftingScreen::new);
 	}
 	
 }
