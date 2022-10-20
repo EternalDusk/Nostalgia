@@ -12,7 +12,7 @@ public class BlockEntityInit {
 	
 	public static final RegistryObject<BlockEntityType<NostalgiaCraftingBlockEntity>> NOSTALGIA_CRAFTING_TABLE = BLOCK_ENTITIES
             .register("example_chest", () -> BlockEntityType.Builder
-                    .of(NostalgiaCraftingBlockEntity::new, BlockInit.NOSTALGIA_CRAFTING_TABLE.get()).build(null));
+                    .of(NostalgiaCraftingBlockEntity::new, BlockInit.NOSTALGIA_CRAFTING_TABLE.get().build(null)));
 	
 	private BlockEntityInit() {
 	}
